@@ -25,15 +25,16 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, arg):
         """Uses quit as a command to exit"""
-        return True
+        exit()
 
     def do_EOF(self, arg):
         """command for end of file"""
-        return True
+        exit()
 
     def emptyline(self):
         """empty line"""
         return
+
     def do_create(self, arg):
         """Creates new instance of BaseModel\n"""
         classes = storage.classes()
